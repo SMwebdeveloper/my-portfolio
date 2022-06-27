@@ -1,0 +1,40 @@
+.contact{
+    width: 100%;
+    height: 100vh;
+    background: var(--clr-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact h1{
+    color: hsl(var(--clr-glass));
+}
+
+.contact input{
+    width: 40%;
+    padding: 15px;
+    margin-block: .3rem;
+    border: none;
+    outline: none;
+    background: hsl(var(--clr-glass-dark));
+    color: var(--clr-white);
+}
+
+.contact .input-msg{
+    padding-bottom: 4rem;
+}
+
+.contact a{
+    color:var(--clr-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-block: 1rem;
+}
+
+@media (max-width:850px) {
+    .contact input{
+        width: 70% ;
+    }
+}

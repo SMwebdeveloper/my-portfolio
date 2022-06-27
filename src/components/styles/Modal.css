@@ -1,0 +1,43 @@
+.modal{
+    position: fixed;
+    display: grid;
+    place-content: center;
+    background: hsl(var(--clr-glass-dark));
+    backdrop-filter: blur(1rem);
+    gap: 0.5rem;
+    padding: 1rem;
+    inset: 20%;
+    border-radius: 0.5rem;
+}
+
+.cart{
+    padding: 1.8rem;
+    background: hsl(var(--clr-glass-blank));
+    cursor: pointer;
+    display: block;
+}
+.cart a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--clr-white);
+    font-size: clamp(.1rem, .5vw + .5rem, 3rem);
+}
+
+.close-modal{
+    position: absolute;
+    cursor: pointer;
+    color: var(--clr-white);
+    top: 1%;
+    left: 1%;
+}
+
+.close-modal .cm{
+    font-size: 18px;
+}
+
+@media (min-widht:50em) {
+    .modal{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+}
