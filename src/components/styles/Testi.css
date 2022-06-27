@@ -1,0 +1,38 @@
+.testimonials{
+    width: 100%;
+    min-height: 100vh;
+    background: var(--clr-black);
+    display: grid;
+    gap: 2rem;
+    color: var(--clr-white);
+    padding-inline: 2rem;
+    padding-block: 2rem;
+}
+
+.test-cart{
+    padding:2.5rem ;
+    background: hsl(var(--clr-glass-dark));
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.test-cart:hover{
+    background: var(--clr-white);
+    transition: 0.25s;
+}
+
+.test-cart h3{
+    text-transform: uppercase;
+    margin-block:1rem ;
+}
+.test-cart p{
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+@media (min-width:600px) {
+    .testimonials{
+        place-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(35rem,1fr));
+    }
+}

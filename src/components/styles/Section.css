@@ -1,0 +1,46 @@
+ .section{
+     width: 100%;
+     height: 100vh;
+     background: linear-gradient(45deg,var(--clr-section)), url('../asses/man.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     display: flex;
+     align-items: center;
+     padding-inline: 4rem;
+ }
+
+ .section > *{
+     text-align: center;
+     max-width: 60ch;
+     text-transform: uppercase;
+ }
+.main-header{
+   font-size: 15px;
+   color: var(--clr-white);
+}
+.main-header span{
+    display: block;
+    font-size: clamp(1rem,14vw + 1rem,5.5rem);
+    color: hsl(var(--clr-glass-light));
+    
+}
+
+.main-status{
+    font-size:clamp(.3rem, .4vw + .4rem, 2rem);
+    color: hsl(var(--clr-glass-font));
+}
+
+.main-btn{
+    margin-block: 1rem;
+}
+
+.main-btn a{ 
+    text-decoration: none;
+    color: var(--clr-white);
+}
+
+@media (max-widht:900px) {
+    .section{
+        justify-content: center;
+    }
+}
